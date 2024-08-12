@@ -36,15 +36,5 @@ namespace WiredBrainCoffee.CustomersApp.View
         {
             await _viewModel.LoadAsync();
         }
-
-        private void ButtonMoveNavigation_Click(object sender, RoutedEventArgs e)
-        {
-            _viewModel.ModeNavigation();
-        }
-
-        private void ButonAdd_Click(object sender, RoutedEventArgs e)
-        {
-            _viewModel.Add();
-        }
     }
 }

@@ -27,7 +27,8 @@
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal">
                 <Button Margin="10"
-                Width="75" Click="ButonAdd_Click">
+                Width="75" 
+                        Command="{Binding AddCommand}">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Images/add.png" 
                        Height="18"
@@ -37,8 +38,9 @@
                 </Button>
                 <Button Content="Delete"
                 Width="75"
-                Margin="0 10 10 10"/>
-                <Button Margin="0 10 10 10" Click="ButtonMoveNavigation_Click">
+                Margin="0, 10, 10, 10"
+                        Command="{Binding DeleteCommand}"/>
+                <Button Margin="0 10 10 10" Command="{Binding MoveNavigationCommand}">
                     <Image Source="/Images/move.png"
                        Height="18"/>
                 </Button>
@@ -46,7 +48,7 @@
             <ListView ItemsSource="{Binding Customers}"
                       SelectedItem="{Binding SelectedCustomer, Mode=TwoWay}"
                       DisplayMemberPath="FirstName"
-                      Grid.Row="1" Margin="10 0 10 10" />
+                      Grid.Row="1" Margin="10, 0, 10, 10" />
         </Grid>
 
         <!-- Customer Detail -->
