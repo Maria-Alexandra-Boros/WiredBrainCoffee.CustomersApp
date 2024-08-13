@@ -5,15 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WiredBrainCoffee.CustomersApp.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#F05A28" >
+            d:DesignHeight="450" d:DesignWidth="800">
+    
+    <Grid Background="{StaticResource HeaderBackgroundBrush}" >
             <StackPanel HorizontalAlignment="Center" 
                 Orientation="Horizontal">
                 <Image Source="/Images/logo.png"
            Margin="5"
            Width="100"/>
                 <TextBlock  Text="Customers App" 
-                Foreground="White"
+                Foreground="{StaticResource HeaderForegroundBrush}"
                 FontSize="30" 
                 VerticalAlignment="Center"/>
                 <TextBlock Text="Version 1.0"

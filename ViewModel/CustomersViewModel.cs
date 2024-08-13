@@ -48,9 +48,12 @@ namespace WiredBrainCoffee.CustomersApp.View.ViewModel
             {
                 _selectedCustomer = value;
                 RaisePropertyChanged();
+                RaisePropertyChanged(nameof(IsCustomerSelected));
                 DeleteCommand.RaiseCanExecuteChanged();
             }
         }
+
+        public bool IsCustomerSelected => SelectedCustomer is not null;
         public NavigationSide NavigationSide
         {
             get => _navigationSide;

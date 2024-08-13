@@ -32,7 +32,7 @@
         <view:CustomersView Grid.Row="2"/>
 
         <!-- StatusBar -->
-        <StatusBar Grid.Row="3">
+        <StatusBar  Grid.Row="3">
             <StatusBarItem FontSize="20" Content=" (c) Wired Brain Coffee"/>
         </StatusBar>
         
