@@ -21,7 +21,7 @@ namespace WiredBrainCoffee.CustomersApp.View.ViewModel
             MoveNavigationCommand = new DelegateCommand(MoveNavigation);
             DeleteCommand = new DelegateCommand(Delete, CanDelete);
         }
-        public async Task LoadAsync()
+        public async override Task LoadAsync()
         {
             if (Customers.Any())
             {
